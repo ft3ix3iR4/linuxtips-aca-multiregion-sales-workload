@@ -40,7 +40,8 @@ module "sales_api" {
   deployment_controller = "ECS"
 
   service_hosts = [
-    "fellipe.teste.com"
+    "fellipe.teixeira.com",
+    "sales-api.sales-cluster.internal.com"
   ]
 
   vpc_id = data.aws_ssm_parameter.vpc.value
